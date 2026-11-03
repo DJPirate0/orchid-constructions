@@ -11,7 +11,7 @@ export const AboutSection: React.FC = () => {
               Who We Are
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#16254C] tracking-tight mb-3 sm:mb-4">
-              An Integrated Architectural & Engineering Practice
+              Civil Engineering Services
             </h2>
             <p className="text-xs sm:text-sm font-semibold text-slate-500 font-['Tajawal',sans-serif]" dir="rtl">
               أوركيد للإنشاءات ذ.م.م - استشارات هندسية ومعمارية في دولة الإمارات

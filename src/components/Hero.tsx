@@ -47,7 +47,7 @@ export const Hero: React.FC = () => {
             <div className="text-[11px] sm:text-xs text-slate-500 font-medium mt-1 leading-tight">Completed Projects</div>
           </div>
           <div className="p-3.5 sm:p-4 bg-white/70 backdrop-blur-2xs rounded-xl sm:rounded-lg border border-slate-200/80 shadow-2xs transition-all duration-300 ease-out hover:bg-white hover:shadow-xs hover:-translate-y-0.5">
-            <div className="text-xl sm:text-2xl md:text-3xl font-bold text-[#16254C] transition-colors duration-200">15+</div>
+            <div className="text-xl sm:text-2xl md:text-3xl font-bold text-[#16254C] transition-colors duration-200">30+</div>
             <div className="text-[11px] sm:text-xs text-slate-500 font-medium mt-1 leading-tight">Years UAE Experience</div>
           </div>
           <div className="p-3.5 sm:p-4 bg-white/70 backdrop-blur-2xs rounded-xl sm:rounded-lg border border-slate-200/80 shadow-2xs transition-all duration-300 ease-out hover:bg-white hover:shadow-xs hover:-translate-y-0.5">

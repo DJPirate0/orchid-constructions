@@ -33,7 +33,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         </div>
         {showSubtitle && (
           <span className="text-[10px] sm:text-[11px] text-slate-500 font-medium truncate">
-            Engineering & Architectural Consultants · UAE
+            Engineering & Architectural Consultants · UAE · KSA
           </span>
         )}
       </div>
