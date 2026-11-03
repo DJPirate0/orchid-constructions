@@ -16,7 +16,8 @@ export interface Project {
   year: string;
   area: string;
   description: string;
-  image: string;
+  gradient: string;
+  image?: string;
 }
 
 export const SERVICES: Service[] = [
@@ -75,7 +76,8 @@ export const PROJECTS: Project[] = [
     year: '2025',
     area: '185,000 Sq.Ft',
     description: 'Complete architectural and structural engineering for a high-capacity logistics warehouse facility featuring 42m clear spans and heavy-duty slabs.',
-    image: '/src/assets/images/proj_logistics_hub_1793702708523.jpg'
+    gradient: 'from-[#16254C] via-[#1E386E] to-[#2B529A]',
+    image: 'from-[#16254C] via-[#1E386E] to-[#2B529A]'
   },
   {
     id: 'business-tower',
@@ -87,7 +89,8 @@ export const PROJECTS: Project[] = [
     year: '2024',
     area: '320,000 Sq.Ft',
     description: 'Multi-storey commercial development engineered with column-free post-tensioned plates and high-performance energy-saving glazed facades.',
-    image: '/src/assets/images/proj_commercial_tower_1793702709449.jpg'
+    gradient: 'from-[#142243] via-[#1E3A75] to-[#2F5CA8]',
+    image: 'from-[#142243] via-[#1E3A75] to-[#2F5CA8]'
   },
   {
     id: 'luxury-villa',
@@ -99,7 +102,8 @@ export const PROJECTS: Project[] = [
     year: '2025',
     area: '24,500 Sq.Ft',
     description: 'Bespoke modern residence showcasing striking fair-faced architectural concrete, cantilevered volumes, and expansive floor-to-ceiling glass.',
-    image: '/src/assets/images/proj_luxury_villa_1793702711603.jpg'
+    gradient: 'from-[#2B1B36] via-[#52234F] to-[#7B2E6A]',
+    image: 'from-[#2B1B36] via-[#52234F] to-[#7B2E6A]'
   },
   {
     id: 'cold-chain-facility',
@@ -111,7 +115,8 @@ export const PROJECTS: Project[] = [
     year: '2024',
     area: '94,000 Sq.Ft',
     description: 'Specialized temperature-controlled engineering facility designed for efficient logistics distribution and rapid municipal authority clearance.',
-    image: '/src/assets/images/proj_distrib_depot_1793702711040.jpg'
+    gradient: 'from-[#0F2942] via-[#17466D] to-[#23689A]',
+    image: 'from-[#0F2942] via-[#17466D] to-[#23689A]'
   },
   {
     id: 'commercial-plaza',
@@ -123,7 +128,8 @@ export const PROJECTS: Project[] = [
     year: '2024',
     area: '168,000 Sq.Ft',
     description: 'Modern two-storey retail and corporate center engineered with wide waffle slabs, rooftop open dining, and basement parking.',
-    image: '/src/assets/images/proj_commercial_centre_1793702712183.jpg'
+    gradient: 'from-[#1B2544] via-[#2A3E6E] to-[#405D9E]',
+    image: 'from-[#1B2544] via-[#2A3E6E] to-[#405D9E]'
   },
   {
     id: 'specialized-facility',
@@ -135,6 +141,7 @@ export const PROJECTS: Project[] = [
     year: '2023',
     area: '142,000 Sq.Ft',
     description: 'Heavy structural steel industrial plant designed with 20-ton overhead crane runways and specialized equipment foundation pads.',
-    image: '/src/assets/images/proj_industrial_plant_1793702710821.jpg'
+    gradient: 'from-[#1F2344] via-[#333868] to-[#4F4B84]',
+    image: 'from-[#1F2344] via-[#333868] to-[#4F4B84]'
   }
 ];
