@@ -57,20 +57,35 @@ export const ProjectsSection: React.FC = () => {
               onClick={() => setSelectedProject(project)}
               className="group bg-[#FAFBFD] rounded-xl border border-slate-200/90 overflow-hidden hover:bg-white hover:shadow-xl hover:border-slate-300 transition-all duration-300 ease-out hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between"
             >
-              {/* Graphic Architectural Card Banner */}
-              <div className={`h-44 sm:h-48 bg-gradient-to-br ${project.image} p-4 sm:p-5 relative flex flex-col justify-between text-white overflow-hidden`}>
-                <div className="flex items-center justify-between text-xs text-slate-300">
-                  <span className="uppercase tracking-wider font-medium">{project.categoryLabel}</span>
-                  <span className="font-mono text-[11px] sm:text-xs">{project.year}</span>
-                </div>
+              {/* Real Architectural Project Photo Banner */}
+              <div className="h-48 sm:h-52 relative overflow-hidden bg-slate-900">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  referrerPolicy="no-referrer"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/25 to-slate-950/30" />
 
-                <div className="flex items-center justify-between mt-auto">
-                  <div className="flex items-center gap-1.5 text-xs text-slate-200">
-                    <Maximize2 className="w-3.5 h-3.5" />
-                    <span className="font-mono text-[11px] sm:text-xs">{project.area}</span>
+                <div className="absolute inset-0 p-4 sm:p-5 flex flex-col justify-between text-white pointer-events-none">
+                  <div className="flex items-center justify-between text-xs text-slate-200">
+                    <span className="uppercase tracking-wider font-semibold px-2 py-0.5 rounded bg-black/40 backdrop-blur-xs text-[10px] sm:text-xs border border-white/10">
+                      {project.categoryLabel}
+                    </span>
+                    <span className="font-mono text-[11px] sm:text-xs px-2 py-0.5 rounded bg-black/40 backdrop-blur-xs border border-white/10">
+                      {project.year}
+                    </span>
                   </div>
-                  <div className="w-7 h-7 rounded-full bg-white/20 group-hover:bg-[#9B2C78] group-hover:scale-110 flex items-center justify-center transition-all duration-300 ease-out shadow-xs">
-                    <ArrowUpRight className="w-4 h-4 text-white" />
+
+                  <div className="flex items-center justify-between mt-auto">
+                    <div className="flex items-center gap-1.5 text-xs text-slate-100 font-medium px-2 py-0.5 rounded bg-black/40 backdrop-blur-xs border border-white/10">
+                      <Maximize2 className="w-3.5 h-3.5 text-slate-300" />
+                      <span className="font-mono text-[11px] sm:text-xs">{project.area}</span>
+                    </div>
+                    <div className="w-7 h-7 rounded-full bg-white/20 backdrop-blur-xs group-hover:bg-[#9B2C78] group-hover:scale-110 flex items-center justify-center transition-all duration-300 ease-out shadow-xs">
+                      <ArrowUpRight className="w-4 h-4 text-white" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -101,9 +116,26 @@ export const ProjectsSection: React.FC = () => {
         {selectedProject && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-900/60 backdrop-blur-xs transition-opacity duration-300 animate-in fade-in">
             <div className="bg-white rounded-xl sm:rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 transform transition-all duration-300 ease-out animate-in zoom-in-95">
-              <div className={`p-5 sm:p-6 bg-gradient-to-r ${selectedProject.image} text-white flex items-start justify-between`}>
-                <div className="pr-4">
-                  <span className="text-xs uppercase tracking-wider text-slate-300 block mb-1">
+              <div className="relative h-52 sm:h-60 bg-slate-900 overflow-hidden">
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-slate-950/20" />
+
+                <button
+                  type="button"
+                  onClick={() => setSelectedProject(null)}
+                  className="absolute top-3.5 right-3.5 z-10 min-w-[36px] min-h-[36px] flex items-center justify-center text-white p-1.5 rounded-full bg-black/50 hover:bg-black/75 backdrop-blur-xs transition-colors duration-200 cursor-pointer"
+                  aria-label="Close modal"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+
+                <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6 text-white">
+                  <span className="text-xs uppercase tracking-wider text-slate-300 block mb-1 font-medium">
                     {selectedProject.categoryLabel} · {selectedProject.location}
                   </span>
                   <h3 className="text-lg sm:text-xl font-bold leading-snug">{selectedProject.title}</h3>
@@ -111,14 +143,6 @@ export const ProjectsSection: React.FC = () => {
                     {selectedProject.arabicTitle}
                   </span>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => setSelectedProject(null)}
-                  className="min-w-[36px] min-h-[36px] flex items-center justify-center text-slate-300 hover:text-white p-1 rounded-md hover:bg-white/10 transition-colors duration-200"
-                  aria-label="Close modal"
-                >
-                  <X className="w-5 h-5" />
-                </button>
               </div>
 
               <div className="p-5 sm:p-6 space-y-4 text-xs sm:text-sm text-slate-600 leading-relaxed">

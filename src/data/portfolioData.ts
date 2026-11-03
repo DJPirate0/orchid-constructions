@@ -75,7 +75,7 @@ export const PROJECTS: Project[] = [
     year: '2025',
     area: '185,000 Sq.Ft',
     description: 'Complete architectural and structural engineering for a high-capacity logistics warehouse facility featuring 42m clear spans and heavy-duty slabs.',
-    image: 'from-slate-900 via-slate-800 to-[#16254C]'
+    image: '/src/assets/images/proj_logistics_hub_1793702708523.jpg'
   },
   {
     id: 'business-tower',
@@ -87,7 +87,7 @@ export const PROJECTS: Project[] = [
     year: '2024',
     area: '320,000 Sq.Ft',
     description: 'Multi-storey commercial development engineered with column-free post-tensioned plates and high-performance energy-saving glazed facades.',
-    image: 'from-[#16254C] via-[#1a2d5e] to-slate-900'
+    image: '/src/assets/images/proj_commercial_tower_1793702709449.jpg'
   },
   {
     id: 'luxury-villa',
@@ -99,7 +99,7 @@ export const PROJECTS: Project[] = [
     year: '2025',
     area: '24,500 Sq.Ft',
     description: 'Bespoke modern residence showcasing striking fair-faced architectural concrete, cantilevered volumes, and expansive floor-to-ceiling glass.',
-    image: 'from-slate-900 via-[#23356e] to-[#121c38]'
+    image: '/src/assets/images/proj_luxury_villa_1793702711603.jpg'
   },
   {
     id: 'cold-chain-facility',
@@ -111,7 +111,7 @@ export const PROJECTS: Project[] = [
     year: '2024',
     area: '94,000 Sq.Ft',
     description: 'Specialized temperature-controlled engineering facility designed for efficient logistics distribution and rapid municipal authority clearance.',
-    image: 'from-[#0e172a] via-[#16254C] to-slate-800'
+    image: '/src/assets/images/proj_distrib_depot_1793702711040.jpg'
   },
   {
     id: 'commercial-plaza',
@@ -123,7 +123,7 @@ export const PROJECTS: Project[] = [
     year: '2024',
     area: '168,000 Sq.Ft',
     description: 'Modern two-storey retail and corporate center engineered with wide waffle slabs, rooftop open dining, and basement parking.',
-    image: 'from-slate-950 via-[#182852] to-[#11192e]'
+    image: '/src/assets/images/proj_commercial_centre_1793702712183.jpg'
   },
   {
     id: 'specialized-facility',
@@ -135,6 +135,6 @@ export const PROJECTS: Project[] = [
     year: '2023',
     area: '142,000 Sq.Ft',
     description: 'Heavy structural steel industrial plant designed with 20-ton overhead crane runways and specialized equipment foundation pads.',
-    image: 'from-[#121c38] via-slate-900 to-[#16254C]'
+    image: '/src/assets/images/proj_industrial_plant_1793702710821.jpg'
   }
 ];

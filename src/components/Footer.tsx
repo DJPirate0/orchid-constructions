@@ -33,7 +33,7 @@ export const Footer: React.FC = () => {
 
           {/* Copyright */}
           <div className="text-xs text-slate-500">
-            © {new Date().getFullYear()} Orchid Constructions L.L.C. Abu Dhabi, U.A.E.
+            © 2015 Orchid Constructions L.L.C. Abu Dhabi, U.A.E.
           </div>
         </div>
       </div>
