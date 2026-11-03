@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <div className="inline-block text-xs font-semibold text-[#9B2C78] uppercase tracking-wider mb-3 sm:mb-4">
-            Engineering Consultants · UAE
+            Engineering Consultants · UAE · KSA
           </div>
 
           <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#16254C] tracking-tight leading-[1.2] sm:leading-[1.15] mb-4 sm:mb-6">
