@@ -1,36 +1,50 @@
 @import "tailwindcss";
 
-@layer utilities {
-  .bg-blueprint-grid {
-    background-size: 36px 36px;
-    background-image: 
-      linear-gradient(to right, rgba(30, 58, 138, 0.06) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(30, 58, 138, 0.06) 1px, transparent 1px);
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
-  .bg-blueprint-grid-dark {
-    background-size: 36px 36px;
-    background-image: 
-      linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    touch-action: manipulation;
+    overflow-x: hidden;
   }
-  .bg-blueprint-dots {
-    background-size: 24px 24px;
-    background-image: radial-gradient(circle, rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+  
+  .font-mono, .tabular-nums {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Sleek, responsive scrollbars for wide data tables and modals */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(148, 163, 184, 0.35) transparent;
   }
 }
 
-/* Smooth transitions & custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+/* Hardware accelerated backdrop blur and animations to avoid frame drops */
+.backdrop-blur-xs,
+.backdrop-blur-sm,
+.backdrop-blur-md {
+  will-change: backdrop-filter;
+  transform: translateZ(0);
 }
-::-webkit-scrollbar-track {
-  background: #f1f5f9;
-}
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
 }
