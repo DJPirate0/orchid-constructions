@@ -4,7 +4,6 @@ export interface Service {
   arabicTitle: string;
   description: string;
   iconName: string;
-  tag?: string;
 }
 
 export interface Project {
@@ -48,24 +47,21 @@ export const SERVICES: Service[] = [
     title: 'Geotechnical Subsurface Investigation',
     arabicTitle: 'التحريات الجيوتقنية وفحص التربة',
     description: 'Subsurface soil testing, borehole exploratory drilling, ground strata profiling, bearing capacity assessments, and geophysical foundation analysis.',
-    iconName: 'Mountain',
-    tag: 'Roads & Soil Testing'
+    iconName: 'Mountain'
   },
   {
     id: 'asphalt-testing',
     title: 'Asphalt Testing & Quality Assurance',
     arabicTitle: 'اختبارات الأسفلت وجودة الرصف',
     description: 'Certified laboratory asphalt mix verification, bitumen binder testing, Marshall stability, core sampling, and in-situ pavement compaction checks.',
-    iconName: 'FlaskConical',
-    tag: 'Roads & Soil Testing'
+    iconName: 'FlaskConical'
   },
   {
     id: 'infrastructure-works',
     title: 'Infrastructure & Roads Works',
     arabicTitle: 'أعمال البنية التحتية وهندسة الطرق',
     description: 'Comprehensive highway and municipal road design, grading, stormwater drainage networks, utility distribution, and civil infrastructure supervision.',
-    iconName: 'Route',
-    tag: 'Roads & Soil Testing'
+    iconName: 'Route'
   },
   {
     id: 'project-management',

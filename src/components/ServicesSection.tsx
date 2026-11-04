@@ -51,15 +51,8 @@ export const ServicesSection: React.FC = () => {
               className="group p-5 sm:p-6 rounded-xl bg-white border border-slate-200/90 shadow-2xs hover:border-[#16254C]/30 hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1 flex flex-col justify-between"
             >
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center shadow-2xs group-hover:scale-105 group-hover:border-[#9B2C78]/30 group-hover:bg-white transition-all duration-300 ease-out">
-                    {getIcon(service.iconName)}
-                  </div>
-                  {service.tag && (
-                    <span className="text-[10px] font-semibold tracking-wider uppercase text-[#9B2C78] bg-[#9B2C78]/10 px-2.5 py-0.5 rounded-full border border-[#9B2C78]/20">
-                      {service.tag}
-                    </span>
-                  )}
+                <div className="w-10 h-10 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center shadow-2xs group-hover:scale-105 group-hover:border-[#9B2C78]/30 group-hover:bg-white transition-all duration-300 ease-out mb-5">
+                  {getIcon(service.iconName)}
                 </div>
 
                 <h3 className="text-base font-bold text-[#16254C] mb-1 group-hover:text-[#9B2C78] transition-colors duration-200">
