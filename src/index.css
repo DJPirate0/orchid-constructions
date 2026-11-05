@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .bg-blueprint-grid {
+    background-size: 36px 36px;
+    background-image: 
+      linear-gradient(to right, rgba(30, 58, 138, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(30, 58, 138, 0.06) 1px, transparent 1px);
+  }
+  .bg-blueprint-grid-dark {
+    background-size: 36px 36px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  }
+  .bg-blueprint-dots {
+    background-size: 24px 24px;
+    background-image: radial-gradient(circle, rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+  }
+}
+
+/* Smooth transitions & custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
